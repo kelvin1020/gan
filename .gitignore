@@ -1,4 +1,5 @@
 .ipynb_checkpoints
 mnist_data/
+celeb*
 model*
 log.md
