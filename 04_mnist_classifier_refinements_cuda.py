@@ -122,12 +122,14 @@ if __name__ == '__main__':
     
     ######################################## check if CUDA is available ######################################## 
     # if yes, set default tensor type to cuda
-    if torch.cuda.is_available():
-      torch.set_default_tensor_type(torch.cuda.FloatTensor)
-      print("using cuda:", torch.cuda.get_device_name(0))
-      pass
+    # if torch.cuda.is_available():
+    #   torch.set_default_tensor_type(torch.cuda.FloatTensor)
+    #   print("using cuda:", torch.cuda.get_device_name(0))
+    #   pass
 
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    #device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = "cpu"
+
 
     #Load Data
     mnist_dataset = MnistDataset('mnist_data/mnist_train.csv')
